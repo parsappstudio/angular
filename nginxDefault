@@ -6,7 +6,7 @@ server {
 
 listen   80;
 server_name _;
-root /home/html;
+root /home/app;
 
 location / {       
         proxy_pass         http://srv-app/;
