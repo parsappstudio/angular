@@ -5,7 +5,7 @@ FROM nginx:alpine
 ## Remove default nginx website
 RUN rm -rf /usr/share/nginx/html/*
 #Remove nginx default file if exists
-Run rm /etc/nginx/sites-enabled/default
+Run rm -rf /etc/nginx/conf.d/default.conf
 #Copy nginx default file from ./Nginx/default to image
 Copy nginxDefault /etc/nginx/conf.d/default.conf
 #-------------Nginx finish------------------
